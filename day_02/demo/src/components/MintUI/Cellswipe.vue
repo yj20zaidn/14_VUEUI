@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <mt-cell-swipe title="10086" :right="[
+            {
+                content:'隐藏提醒',
+                style:{background:'#00f',color:'#fff'},
+                handler:()=>{
+                    this.$toast('aaa');
+                }
+            },
+            {
+                content:'删除',
+                style:{background:'#f00',color:'#fff'},
+                handler:()=>{
+                    this.$toast('bbbb');
+                }
+            }
+        ]">
+            请您为10分满意进行评分:
+        </mt-cell-swipe>        
+    </div>
+</template>
+<style>
+	html,body{
+		touch-action:none;
+	}
+</style>
